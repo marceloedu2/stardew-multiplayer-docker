@@ -5,7 +5,7 @@ services:
     build: docker
     container_name: stardew
     environment:
-      - "VNC_PASSWORD=nyanyanya"
+      - "VNC_PASSWORD=${VNC_PASSWORD-nyanyanya}"
       - "DISPLAY_HEIGHT=900"
       - "DISPLAY_WIDTH=1200"
       ## Always On Server mod
