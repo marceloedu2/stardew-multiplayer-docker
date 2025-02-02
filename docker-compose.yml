@@ -1,9 +1,7 @@
-version: '2.2'
-
 services:
   valley:
     build: docker
-    container_name: stardew
+    container_name: server
     environment:
       - "VNC_PASSWORD=${VNC_PASSWORD-nyanyanya}"
       - "DISPLAY_HEIGHT=900"
@@ -138,5 +136,4 @@ services:
       - ./valley_saves:/config/xdg/config/StardewValley/Saves
       # If you'd like to set an existing savegame before the first start otherwise this file will be edited when starting the first game
       - ./configs/autoload.json:/data/Stardew/Stardew Valley/Mods/AutoLoadGame/config.json
-
-      
+      - ./server/valley_logs:/config/xdg/config/StardewValley/ErrorLogs

@@ -1,1 +1,12 @@
+configs
 valley_saves
+server/valley_logs
+.idea
+.vscode
+
+.env
+node_modules
+
+dist
+
+yarn*.log
