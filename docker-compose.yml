@@ -136,4 +136,5 @@ services:
       - ./valley_saves:/config/xdg/config/StardewValley/Saves
       # If you'd like to set an existing savegame before the first start otherwise this file will be edited when starting the first game
       - ./configs/autoload.json:/data/Stardew/Stardew Valley/Mods/AutoLoadGame/config.json
-      - ./server/valley_logs:/config/xdg/config/StardewValley/ErrorLogs
+      # logger to api logger for discord bot
+      - ./logger/valley_logs:/config/xdg/config/StardewValley/ErrorLogs
